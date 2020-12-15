@@ -8,9 +8,8 @@ then
 fi
 
 echo "Deleting old publication"
-rm -rf public
-mkdir public
-rm -rf .git/worktrees/public/
+rm -rf doc
+mkdir doc
 
 echo "Removing existing files"
 rm -rf public/*
