@@ -7,9 +7,9 @@ then
     exit 1;
 fi
 
-echo "Deleting old publication"
-rm -rf doc
-mkdir doc
+echo "Deleting old docs publication"
+rm -rf docs
+mkdir docs
 
 echo "Removing existing files"
 rm -rf public/*
