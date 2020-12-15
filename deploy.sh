@@ -16,7 +16,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo --publishDir = docs
+hugo
 
 echo "Push to origin master"
 git push origin master

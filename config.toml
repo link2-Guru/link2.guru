@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 publishDir = "docs"
-baseURL = "https://examplesite.com"
+baseURL = "https://link2-guru.github.io/link2.guru/"
 languageCode = "en-us"
 title = "Liva | Personal blog template"
 theme = "liva-hugo"
