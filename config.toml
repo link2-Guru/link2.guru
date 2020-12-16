@@ -2,7 +2,7 @@
 publishDir = "docs"
 baseURL = "https://link2-guru.github.io/link2.guru/"
 languageCode = "en-us"
-title = "Liva | Personal blog template"
+title = ""
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
@@ -45,8 +45,8 @@ disqusShortname = ""
 
   # main menu
   [[menu.main]]
-  name = "About"
-  URL = "about"
+  name = "Home"
+  URL = "/"
   weight = 1
 
   [[menu.main]]
@@ -55,9 +55,14 @@ disqusShortname = ""
   weight = 2
 
   [[menu.main]]
+  name = "About"
+  URL = "about"
+  weight = 3
+
+  [[menu.main]]
   name = "Contact"
   URL = "contact"
-  weight = 3
+  weight = 4
 
   # footer menu
   [[menu.footer]]
@@ -82,15 +87,15 @@ logo = "images/logo.png"
 home = "Home"
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = ""
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = ""
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+mobile = ""
+email = ""
+location = ""
 # copyright
-copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved |"
+copyright = "| copyright &copy; 2020  All Rights Reserved |"
 
   # Preloader
   [params.preloader]
@@ -105,7 +110,7 @@ copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All 
 [params.newsletter]
 enable = true
 title = "Join Our Newsletter"
-content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
+content = ""
 
 
 # cookies
@@ -117,25 +122,25 @@ expire_days = 2
 ############################# social site ########################
 [[params.social]]
 title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+icon = "ti-facebook" 
 link = "#"
 
 [[params.social]]
 title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+icon = "ti-twitter-alt" 
 link = "#"
 
 [[params.social]]
 title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
+icon = "ti-instagram" 
 link = "#"
 
 [[params.social]]
 title = "github"
-icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+icon = "ti-github" 
+link = "https://github.com/link2-Guru"
 
 [[params.social]]
 title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+icon = "ti-linkedin" 
 link = "#"
