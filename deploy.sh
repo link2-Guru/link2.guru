@@ -22,7 +22,7 @@ echo "Generating site"
 hugo
 
 echo "Copy CNAME"
-cp CNAME ./docs
+cp CNAME ./docs/CNAME
 
 echo "Push to origin master"
 git push origin master
