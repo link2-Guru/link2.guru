@@ -7,7 +7,7 @@ then
     exit 1;
 fi
 git add .
-git commit -m $1
+git commit -m "$1"
 
 if [[ $(git status -s) ]]
 then
