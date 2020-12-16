@@ -21,5 +21,8 @@ rm -rf docs
 echo "Generating site"
 hugo
 
+echo "Copy CNAME"
+cp CNAME ./docs
+
 echo "Push to origin master"
 git push origin master
