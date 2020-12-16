@@ -1,13 +1,14 @@
 #!/bin/sh
 
-if [ ! -n $0 ]
+echo "$1"
+if [ ! -n "$1" ]
 then
-    echo "Println commit msg"
+    echo "Please print commit msg"
     exit 1;
 fi
-
 git add .
-git commit -m $0
+git commit -m $1
+
 if [[ $(git status -s) ]]
 then
     echo "The working directory is dirty. Please commit any pending changes."
