@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About Team on link2.guru区块链开发团队，专注于公链基础设施，智能合约应用开发，团队成员均来自区块链行业早期的布道者，拥有丰富的开发经验。</title>
-    <link>https://link2-guru.github.io/link2.guru/about/</link>
-    <description>Recent content in About Team on link2.guru区块链开发团队，专注于公链基础设施，智能合约应用开发，团队成员均来自区块链行业早期的布道者，拥有丰富的开发经验。</description>
+    <title>About Team on LINK2.GURU</title>
+    <link>link2.guru/about/</link>
+    <description>Recent content in About Team on LINK2.GURU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://link2-guru.github.io/link2.guru/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="link2.guru/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
