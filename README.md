@@ -1,4 +1,4 @@
-### [link2.guru](link2.guru)
+### [link2.guru](https://link2.guru)
 
 ### development
 ```

@@ -1,8 +1,9 @@
 ######################## default configuration ####################
 publishDir = "docs"
-baseURL = "https://link2-guru.github.io/link2.guru/"
+# baseURL = "https://link2-guru.github.io/link2.guru/"
+baseURL = "link2.guru"
 languageCode = "en-us"
-title = ""
+title = "LINK2.GURU"
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
@@ -86,7 +87,8 @@ disqusShortname = ""
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
+description = "link2.guru区块链开发团队，专注于公链基础设施，智能合约应用开发，团队成员均来自区块链行业早期的布道者，拥有丰富的开发经验。"
+
 author = ""
 # Google Analitycs
 googleAnalitycsID = ""
