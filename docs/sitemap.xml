@@ -3,43 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>link2.guru/about/</loc>
+    <loc>https://link2.guru/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
   
   <url>
-    <loc>link2.guru/blog/</loc>
+    <loc>https://link2.guru/blog/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
   
   <url>
-    <loc>link2.guru/contact/</loc>
+    <loc>https://link2.guru/contact/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
   
   <url>
-    <loc>link2.guru/</loc>
+    <loc>https://link2.guru/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
   
   <url>
-    <loc>link2.guru/categories/block-chain/</loc>
+    <loc>https://link2.guru/categories/block-chain/</loc>
   </url>
   
   <url>
-    <loc>link2.guru/categories/</loc>
+    <loc>https://link2.guru/categories/</loc>
   </url>
   
   <url>
-    <loc>link2.guru/blog/first/</loc>
+    <loc>https://link2.guru/blog/first/</loc>
   </url>
   
   <url>
-    <loc>link2.guru/tags/near/</loc>
+    <loc>https://link2.guru/tags/near/</loc>
   </url>
   
   <url>
-    <loc>link2.guru/tags/</loc>
+    <loc>https://link2.guru/tags/</loc>
   </url>
   
 </urlset>

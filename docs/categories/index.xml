@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on LINK2.GURU</title>
-    <link>link2.guru/categories/</link>
+    <link>https://link2.guru/categories/</link>
     <description>Recent content in Categories on LINK2.GURU</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="link2.guru/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://link2.guru/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Block Chain</title>
-      <link>link2.guru/categories/block-chain/</link>
+      <link>https://link2.guru/categories/block-chain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>link2.guru/categories/block-chain/</guid>
+      <guid>https://link2.guru/categories/block-chain/</guid>
       <description></description>
     </item>
     
