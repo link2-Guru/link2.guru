@@ -1,5 +1,9 @@
 #!/bin/sh
 
+
+echo "Deleting old docs publication"
+rm -rf docs
+
 echo "$1"
 if [ ! -n "$1" ]
 then
@@ -15,8 +19,6 @@ then
     exit 1;
 fi
 
-echo "Deleting old docs publication"
-rm -rf docs
 
 echo "Generating site"
 hugo
