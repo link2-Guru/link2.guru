@@ -110,7 +110,7 @@ copyright = "| copyright &copy; 2020  All Rights Reserved |"
 
 ############################ news letter ########################
 [params.newsletter]
-enable = true
+enable = false
 title = "Join Our Newsletter"
 content = ""
 
