@@ -4,6 +4,14 @@
 echo "Deleting old docs publication"
 rm -rf docs
 
+echo "Generating site"
+hugo
+
+echo "Copy CNAME"
+cp CNAME ./docs/CNAME
+
+
+
 echo "$1"
 if [ ! -n "$1" ]
 then
@@ -19,12 +27,6 @@ then
     exit 1;
 fi
 
-
-echo "Generating site"
-hugo
-
-echo "Copy CNAME"
-cp CNAME ./docs/CNAME
 
 echo "Push to origin master"
 git push origin master

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Near on LINK2.GURU</title>
+    <link>https://link2.guru/tags/near/</link>
+    <description>Recent content in Near on LINK2.GURU</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://link2.guru/tags/near/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>运行Near主网节点（非验证节点）</title>
+      <link>https://link2.guru/blog/how-to-run-mainnet-on-near/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://link2.guru/blog/how-to-run-mainnet-on-near/</guid>
+      <description>注册钱包 首先你创建主网钱包地址，并激活。wallet.near.org
+部署主网节点（非验证节点）  clone nearcore  git clone https://github.com/near/nearcore.git 设置环境变量  export NEAR_RELEASE_VERSION=$(curl -s https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

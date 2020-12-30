@@ -16,7 +16,7 @@ tags:
   - "Near"
 
 # post type
-type: "featured"
+type: "post"
 ---
 
 ### 注册钱包

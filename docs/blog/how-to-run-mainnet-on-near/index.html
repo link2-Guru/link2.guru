@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>LINK2.GURU</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="运行Near主网节点">
+
+  
+  <meta name="generator" content="Hugo 0.79.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://link2.guru/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://link2.guru/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://link2.guru/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://link2.guru/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://link2.guru/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://link2.guru/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://link2.guru/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://link2.guru">
+        <img class="img-fluid"
+          src="https://link2.guru/images/logo.png" alt="LINK2.GURU">
+        </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ti-facebook"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/link2-Guru"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://link2.guru">
+          
+          </a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://link2.guru/">Home</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://link2.guru/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://link2.guru/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://link2.guru/contact">Contact</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://link2.guru/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/block-chain"
+          class="text-primary">Block chain</a>
+        
+        <h2>运行Near主网节点（非验证节点）</h2>
+        <div class="mb-3 post-meta">
+          <span>By qknow</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>29 December 2020</span>
+          
+        </div>
+        
+        <img src="https://link2.guru/images/run-mainnet.png" class="img-fluid w-100 mb-4" alt="运行Near主网节点（非验证节点）">
+        
+        <div class="content mb-5">
+          <h3 id="注册钱包">注册钱包</h3>
+<p>首先你创建主网钱包地址，并激活。<a href="https://wallet.near.org/">wallet.near.org</a></p>
+<h3 id="部署主网节点非验证节点">部署主网节点（非验证节点）</h3>
+<ol>
+<li>clone <a href="https://github.com/near/nearcore">nearcore</a></li>
+</ol>
+<pre><code>git clone https://github.com/near/nearcore.git
+</code></pre><ol start="2">
+<li>设置环境变量</li>
+</ol>
+<pre><code>export NEAR_RELEASE_VERSION=$(curl -s https://github.com/near/nearcore/releases/latest | tr '/&quot; ' '\n' | grep &quot;[0-9]\.[0-9]*\.[0-9]&quot; | head -n 1)
+</code></pre><p>3 切换分支</p>
+<pre><code>cd nearcore
+git checkout $NEAR_RELEASE_VERSION
+</code></pre><ol start="4">
+<li>构建<strong>nearcore</strong>,时间比较长，耐心等待。</li>
+</ol>
+<pre><code>cargo build -p neard --release
+</code></pre><p>5.配置<strong>chain-id</strong>和<strong>account-id</strong></p>
+<pre><code>target/release/neard init --chain-id=&quot;mainnet&quot; --account-id=&lt;YOUR_STAKING_POOL_ID&gt;
+</code></pre><ol start="6">
+<li>启动节点</li>
+</ol>
+<p>6.1 修改<strong>config.json</strong>配置文件。</p>
+<p>使用<a href="https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/mainnet/config.json">config.json</a>覆盖.near/config.json</p>
+<p>6.2  防火墙需要打开<strong>24567</strong>端口</p>
+<p>6.3 运行下面命令</p>
+<pre><code>target/release/neard run
+</code></pre><p>节点已经运行，等待同步就可以了。</p>
+<p><strong>RPC</strong>端口:<strong>3030</strong>。</p>
+<ol start="7">
+<li>使用<strong>tmux</strong>后台云运行</li>
+</ol>
+<h3 id="参考">参考</h3>
+<p><a href="https://docs.near.org/docs/validator/deploy-on-mainnet">deploy-on-mainnet</a></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="#">facebook</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="#">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="#">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/link2-Guru">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="#">linkedin</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/block-chain">Block chain</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/chainlink">Chainlink</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://link2.guru/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://link2.guru/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://link2.guru/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020  All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://link2.guru/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://link2.guru/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://link2.guru/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://link2.guru/plugins/slick/slick.min.js"></script>
+
+<script src="https://link2.guru/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://link2.guru/plugins/search/fuse.min.js"></script>
+
+<script src="https://link2.guru/plugins/search/mark.js"></script>
+
+<script src="https://link2.guru/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://link2.guru/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>
