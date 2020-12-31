@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="link2.guru区块链开发团队，专注于公链基础设施，智能合约应用开发，团队成员均来自区块链行业早期的布道者，拥有丰富的开发经验。">
+  <meta name="description" content="chainlink合约源码分析">
 
   
   <meta name="generator" content="Hugo 0.79.0" />
@@ -144,167 +144,194 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <img src="https://link2.guru/images/chainlink.png" class="card-img-top" alt="chainlink合约源码分析（2）">
-        
-        <div class="card-body px-0">
+      <div class="col-lg-8 mx-auto">
         
         <a href="/categories/block-chain"
-            class="text-primary">Block chain</a>
+          class="text-primary">Block chain</a>
         
         <a href="/categories/chainlink"
-            class="text-primary">Chainlink</a>
+          class="text-primary">Chainlink</a>
         
-        <a href="https://link2.guru/blog/chainlink%E5%90%88%E7%BA%A6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%902/" class="h5 d-block my-3">chainlink合约源码分析（2）</a>
+        <h2>chainlink合约源码分析（2）</h2>
         <div class="mb-3 post-meta">
-            <span>By qknow</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>31 December 2020</span>
-            
-        </div>
-        <p class="card-text">今天我们分析chainlink合约源码。
-Oracle.sol Oracle 合约在收到转账之后，会触发 onTokenTransfer 方法，该方法会检查转账的有效性，并通过发出 OracleRequest 事件记录更为详细的数据信息 位置Oracle.sol
-主要代码 /// LinkTokenReceiver.</p>
-        <a href="https://link2.guru/blog/chainlink%E5%90%88%E7%BA%A6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%902/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
+          <span>By qknow</span>
           
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <img src="https://link2.guru/images/chainlink.png" class="card-img-top" alt="chainlink合约源码分析（1）">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/block-chain"
-            class="text-primary">Block chain</a>
-        
-        <a href="/categories/chainlink"
-            class="text-primary">Chainlink</a>
-        
-        <a href="https://link2.guru/blog/chainlink%E5%90%88%E7%BA%A6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%901/" class="h5 d-block my-3">chainlink合约源码分析（1）</a>
-        <div class="mb-3 post-meta">
-            <span>By qknow</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>30 December 2020</span>
-            
-        </div>
-        <p class="card-text">今天我们分析chainlink合约源码。
-ChainlinkClient.sol 位置ChainlinkClient.sol
-主要代码 /** * @notice 构建一个ChainlinkRequest * @param _specId node 节点创建的jobId * @param _callbackAddress 请求成功数据回调的地址 * @param _callbackFunctionSignature 回调地址对应的function * @return A Chainlink Request struct in memory */ function buildChainlinkRequest( bytes32 _specId, address _callbackAddress, bytes4 _callbackFunctionSignature ) internal pure returns (Chainlink.</p>
-        <a href="https://link2.guru/blog/chainlink%E5%90%88%E7%BA%A6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%901/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <img src="https://link2.guru/images/run-mainnet.png" class="card-img-top" alt="运行Near主网节点（非验证节点）">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/block-chain"
-            class="text-primary">Block chain</a>
-        
-        <a href="https://link2.guru/blog/how-to-run-mainnet-on-near/" class="h5 d-block my-3">运行Near主网节点（非验证节点）</a>
-        <div class="mb-3 post-meta">
-            <span>By qknow</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>29 December 2020</span>
-            
-        </div>
-        <p class="card-text">注册钱包 首先你创建主网钱包地址，并激活。wallet.near.org
-部署主网节点（非验证节点）  clone nearcore  git clone https://github.com/near/nearcore.git 设置环境变量  export NEAR_RELEASE_VERSION=$(curl -s https://github.</p>
-        <a href="https://link2.guru/blog/how-to-run-mainnet-on-near/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>31 December 2020</span>
           
         </div>
-      </div>
-      
-      <div class="col-lg-4">
-  
-  <div class="widget">
-    
-    <h4 class="widget-title">About Team</h4>
-    
-    <p>link2.guru是一个区块链开发团队，专注于公链基础设施，智能合约应用开发，团队成员均来自区块链行业早期的布道者，拥有丰富的开发经验。同时link2.guru也是面向solidity，rust，node等技术栈的区块链开发者社区，社区分布式协作，为各类区块链生态提供技术服务。</p>
-    <a href="https://link2.guru/about/" class="btn btn-outline-primary">Know More</a>
-    
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Category</h4>
-    <ul class="list-unstyled">
-      <li><a
-          href="/categories/block-chain">Block chain</a>
-      </li>
-      <li><a
-          href="/categories/chainlink">Chainlink</a>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Tag</h4>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/chainlink">Chainlink</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/near">Near</a></li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Social</h4>
-    <ul class="list-inline social-links">
-      
-      <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
-      
-      <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
-      
-      <li class="list-inline-item"><a href="#"><i class="ti-instagram"></i></a></li>
-      
-      <li class="list-inline-item"><a href="https://github.com/link2-Guru"><i class="ti-github"></i></a></li>
-      
-      <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
-      
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <img src="https://link2.guru/images/promotion.png" alt="" class="img-fluid">
-  </div>
-</div>
-
-      
-
-      
-      <div class="col-12 mt-5">
         
+        <img src="https://link2.guru/images/chainlink.png" class="img-fluid w-100 mb-4" alt="chainlink合约源码分析（2）">
+        
+        <div class="content mb-5">
+          <p>今天我们分析chainlink合约源码。</p>
+<h3 id="oraclesol">Oracle.sol</h3>
+<p>Oracle 合约在收到转账之后，会触发 onTokenTransfer 方法，该方法会检查转账的有效性，并通过发出 OracleRequest 事件记录更为详细的数据信息
+位置<a href="https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.6/Oracle.sol">Oracle.sol</a></p>
+<h3 id="主要代码">主要代码</h3>
+<pre><code>/// LinkTokenReceiver.sol
+  /**
+   * @notice Called when LINK is sent to the contract via `transferAndCall`
+   * @dev The data payload's first 2 words will be overwritten by the `_sender` and `_amount`
+   * values to ensure correctness. Calls oracleRequest.
+   * @param _sender Address of the sender
+   * @param _amount Amount of LINK sent (specified in wei)
+   * @param _data Payload of the transaction
+   */
+  function onTokenTransfer(
+    address _sender,
+    uint256 _amount,
+    bytes memory _data
+  )
+    public
+    onlyLINK
+    validRequestLength(_data)
+    permittedFunctionsForLINK(_data)
+  {
+    assembly {
+      // solhint-disable-next-line avoid-low-level-calls
+      mstore(add(_data, 36), _sender) // ensure correct sender is passed
+      // solhint-disable-next-line avoid-low-level-calls
+      mstore(add(_data, 68), _amount)    // ensure correct amount is passed
+    }
+    // solhint-disable-next-line avoid-low-level-calls
+    
+    // 调用 oracleRequest
+    (bool success, ) = address(this).delegatecall(_data); // calls oracleRequest
+    require(success, &quot;Unable to create request&quot;);
+  } 
+  
+</code></pre><pre><code>    /// Oracle.sol
+  /**
+   * @notice 构造函数 初始化的时候传入link代币的地址
+   * @dev 
+   * @param _link The address of the LINK token
+   */
+  constructor(address _link)
+    public
+    Ownable()
+  {
+    LinkToken = LinkTokenInterface(_link); // external but already deployed and unalterable
+  }
+  
+  
+/**
+   * @notice Creates the Chainlink request
+   * @dev Stores the hash of the params as the on-chain commitment for the request.
+   * Emits OracleRequest event for the Chainlink node to detect.
+   * @param _sender The sender of the request
+   * @param _payment The amount of payment given (specified in wei)
+   * @param _specId The Job Specification ID
+   * @param _callbackAddress The callback address for the response
+   * @param _callbackFunctionId The callback function ID for the response
+   * @param _nonce The nonce sent by the requester
+   * @param _dataVersion The specified data version
+   * @param _data The CBOR payload of the request
+   */
+  function oracleRequest(
+    address _sender,
+    uint256 _payment,
+    bytes32 _specId,
+    address _callbackAddress,
+    bytes4 _callbackFunctionId,
+    uint256 _nonce,
+    uint256 _dataVersion,
+    bytes calldata _data
+  )
+    external
+    override
+    onlyLINK()
+    checkCallbackAddress(_callbackAddress)
+  {
+    bytes32 requestId = keccak256(abi.encodePacked(_sender, _nonce));
+    require(commitments[requestId] == 0, &quot;Must use a unique ID&quot;);
+    // solhint-disable-next-line not-rely-on-time
+    uint256 expiration = now.add(EXPIRY_TIME);
 
+    commitments[requestId] = keccak256(
+      abi.encodePacked(
+        _payment,
+        _callbackAddress,
+        _callbackFunctionId,
+        expiration
+      )
+    );
 
+    emit OracleRequest(
+      _specId,
+      _sender,
+      requestId,
+      _payment,
+      _callbackAddress,
+      _callbackFunctionId,
+      expiration,
+      _dataVersion,
+      _data);
+  }
+
+  
+   /**
+   * @notice 给节点设置权限
+   * @param _node The address of the Chainlink node
+   * @param _allowed Bool value to determine if the node can fulfill requests
+   */
+  function setFulfillmentPermission(address _node, bool _allowed)
+    external
+    override
+    onlyOwner()
+  {
+    authorizedNodes[_node] = _allowed;
+  }
+  
+  
+  
+  /**
+   * @notice 允许用户取消请求
+   * sent for the request back to the requester's address.
+   * @dev Given params must hash to a commitment stored on the contract in order for the request to be valid
+   * Emits CancelOracleRequest event.
+   * @param _requestId The request ID
+   * @param _payment The amount of payment given (specified in wei)
+   * @param _callbackFunc The requester's specified callback address
+   * @param _expiration The time of the expiration for the request
+   */
+  function cancelOracleRequest(
+    bytes32 _requestId,
+    uint256 _payment,
+    bytes4 _callbackFunc,
+    uint256 _expiration
+  )
+    external
+    override
+  {
+    bytes32 paramsHash = keccak256(
+      abi.encodePacked(
+        _payment,
+        msg.sender,
+        _callbackFunc,
+        _expiration)
+    );
+    require(paramsHash == commitments[_requestId], &quot;Params do not match request ID&quot;);
+    // solhint-disable-next-line not-rely-on-time
+    require(_expiration &lt;= now, &quot;Request is not expired&quot;);
+
+    delete commitments[_requestId];
+    emit CancelOracleRequest(_requestId);
+
+    assert(LinkToken.transfer(msg.sender, _payment));
+  }
+</code></pre>
+        </div>
+
+        
+        
       </div>
     </div>
   </div>
 </section>
-
 
 
 
