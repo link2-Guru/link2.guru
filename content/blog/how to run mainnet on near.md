@@ -23,7 +23,8 @@ type: "post"
 
 首先你创建主网钱包地址，并激活。[wallet.near.org](https://wallet.near.org/)
 
-
+ <!--more--> 
+ 
 ### 部署主网节点（非验证节点）
 
 1. clone [nearcore](https://github.com/near/nearcore)

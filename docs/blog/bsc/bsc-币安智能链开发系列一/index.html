@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="chainlink合约源码分析">
+  <meta name="description" content="币安智能链（Binance Smart Chain)">
 
   
   <meta name="generator" content="Hugo 0.79.0" />
@@ -152,179 +152,76 @@
         <a href="/categories/block-chain"
           class="text-primary">Block chain</a>
         
-        <a href="/categories/chainlink"
-          class="text-primary">Chainlink</a>
+        <a href="/categories/binance-smart-chain"
+          class="text-primary">Binance smart chain</a>
         
-        <h2>chainlink合约源码分析（2）</h2>
+        <h2>BSC 币安智能链开发系列一</h2>
         <div class="mb-3 post-meta">
-          <span>By qknow</span>
+          <span>By link2</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>31 December 2020</span>
+          <span>17 January 2021</span>
           
         </div>
         
-        <img src="https://link2.guru/images/chainlink.png" class="img-fluid w-100 mb-4" alt="chainlink合约源码分析（2）">
+        <img src="https://link2.guru/images/binance-1.png" class="img-fluid w-100 mb-4" alt="BSC 币安智能链开发系列一">
         
         <div class="content mb-5">
-          <p>今天我们分析chainlink合约源码。</p>
-<hr>
-<h3 id="oraclesol">Oracle.sol</h3>
-<p>Oracle 合约在收到转账之后，会触发 onTokenTransfer 方法，该方法会检查转账的有效性，并通过发出 OracleRequest 事件记录更为详细的数据信息
-位置<a href="https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.6/Oracle.sol">Oracle.sol</a></p>
-<h3 id="主要代码">主要代码</h3>
-<pre><code>/// LinkTokenReceiver.sol
-  /**
-   * @notice Called when LINK is sent to the contract via `transferAndCall`
-   * @dev The data payload's first 2 words will be overwritten by the `_sender` and `_amount`
-   * values to ensure correctness. Calls oracleRequest.
-   * @param _sender Address of the sender
-   * @param _amount Amount of LINK sent (specified in wei)
-   * @param _data Payload of the transaction
-   */
-  function onTokenTransfer(
-    address _sender,
-    uint256 _amount,
-    bytes memory _data
-  )
-    public
-    onlyLINK
-    validRequestLength(_data)
-    permittedFunctionsForLINK(_data)
-  {
-    assembly {
-      // solhint-disable-next-line avoid-low-level-calls
-      mstore(add(_data, 36), _sender) // ensure correct sender is passed
-      // solhint-disable-next-line avoid-low-level-calls
-      mstore(add(_data, 68), _amount)    // ensure correct amount is passed
-    }
-    // solhint-disable-next-line avoid-low-level-calls
-    
-    // 调用 oracleRequest
-    (bool success, ) = address(this).delegatecall(_data); // calls oracleRequest
-    require(success, &quot;Unable to create request&quot;);
-  } 
-  
-</code></pre><pre><code>    /// Oracle.sol
-  /**
-   * @notice 构造函数 初始化的时候传入link代币的地址
-   * @dev 
-   * @param _link The address of the LINK token
-   */
-  constructor(address _link)
-    public
-    Ownable()
-  {
-    LinkToken = LinkTokenInterface(_link); // external but already deployed and unalterable
-  }
-  
-  
-/**
-   * @notice Creates the Chainlink request
-   * @dev Stores the hash of the params as the on-chain commitment for the request.
-   * Emits OracleRequest event for the Chainlink node to detect.
-   * @param _sender The sender of the request
-   * @param _payment The amount of payment given (specified in wei)
-   * @param _specId The Job Specification ID
-   * @param _callbackAddress The callback address for the response
-   * @param _callbackFunctionId The callback function ID for the response
-   * @param _nonce The nonce sent by the requester
-   * @param _dataVersion The specified data version
-   * @param _data The CBOR payload of the request
-   */
-  function oracleRequest(
-    address _sender,
-    uint256 _payment,
-    bytes32 _specId,
-    address _callbackAddress,
-    bytes4 _callbackFunctionId,
-    uint256 _nonce,
-    uint256 _dataVersion,
-    bytes calldata _data
-  )
-    external
-    override
-    onlyLINK()
-    checkCallbackAddress(_callbackAddress)
-  {
-    bytes32 requestId = keccak256(abi.encodePacked(_sender, _nonce));
-    require(commitments[requestId] == 0, &quot;Must use a unique ID&quot;);
-    // solhint-disable-next-line not-rely-on-time
-    uint256 expiration = now.add(EXPIRY_TIME);
+          <h3 id="介绍">介绍</h3>
+<p>您可能听说过原生代币为币安币（BNB）的币安链（Binance Chain），它针对快速交易进行了优化。为了实现速度，它必须做出一定的权衡–一方面从可编程角度来说，它牺牲了其它区块链的灵活性。</p>
+<p>但币安智能链（Binance Smart Chain）对此进行了改变。币安智能链是个具有成熟环境的新区块链，用于开发高性能去中心化应用程序。它旨在与币安链进行跨链兼容性，以确保用户兼得两者优势。</p>
+<p>本质上两个区块链都是并行的。值得注意的是BSC并非所谓的第二层或链外扩展性解决方案。它是一个即使币安链下线后也可以运行的独立区块链。从设计的角度来看，这两个链非常相似。</p>
+<p>由于BSC与EVM兼容，因此它支持以太坊工具和DApp。理论上讲这使开发人员可以轻松地从以太坊移植其项目。对于用户而言，这表示他们可以轻松配置诸如MetaMask之类的应用程序与BSC一起使用，只需调整几个设置即可。</p>
+<h3 id="启动节点">启动节点</h3>
+<h4 id="11-安装go">1.1 安装go</h4>
+<p><a href="https://golang.org/dl/">golang官网</a></p>
+<pre><code>go version
+</code></pre><h4 id="12-启动bsc">1.2 启动bsc</h4>
+<pre><code>wget --no-check-certificate https://github.com/binance-chain/bsc/releases/download/v1.0.4/geth_linux
 
-    commitments[requestId] = keccak256(
-      abi.encodePacked(
-        _payment,
-        _callbackAddress,
-        _callbackFunctionId,
-        expiration
-      )
-    );
 
-    emit OracleRequest(
-      _specId,
-      _sender,
-      requestId,
-      _payment,
-      _callbackAddress,
-      _callbackFunctionId,
-      expiration,
-      _dataVersion,
-      _data);
-  }
+## mainet
+wget --no-check-certificate  $(curl -s https://api.github.com/repos/binance-chain/bsc/releases/latest |grep browser_ |grep mainnet |cut -d\&quot; -f4)
+unzip mainnet.zip
 
-  
-   /**
-   * @notice 给节点设置权限
-   * @param _node The address of the Chainlink node
-   * @param _allowed Bool value to determine if the node can fulfill requests
-   */
-  function setFulfillmentPermission(address _node, bool _allowed)
-    external
-    override
-    onlyOwner()
-  {
-    authorizedNodes[_node] = _allowed;
-  }
-  
-  
-  
-  /**
-   * @notice 允许用户取消请求
-   * sent for the request back to the requester's address.
-   * @dev Given params must hash to a commitment stored on the contract in order for the request to be valid
-   * Emits CancelOracleRequest event.
-   * @param _requestId The request ID
-   * @param _payment The amount of payment given (specified in wei)
-   * @param _callbackFunc The requester's specified callback address
-   * @param _expiration The time of the expiration for the request
-   */
-  function cancelOracleRequest(
-    bytes32 _requestId,
-    uint256 _payment,
-    bytes4 _callbackFunc,
-    uint256 _expiration
-  )
-    external
-    override
-  {
-    bytes32 paramsHash = keccak256(
-      abi.encodePacked(
-        _payment,
-        msg.sender,
-        _callbackFunc,
-        _expiration)
-    );
-    require(paramsHash == commitments[_requestId], &quot;Params do not match request ID&quot;);
-    // solhint-disable-next-line not-rely-on-time
-    require(_expiration &lt;= now, &quot;Request is not expired&quot;);
+## testnet
+wget --no-check-certificate  $(curl -s https://api.github.com/repos/binance-chain/bsc/releases/latest |grep browser_ |grep testnet |cut -d\&quot; -f4)
+unzip testnet.zip
 
-    delete commitments[_requestId];
-    emit CancelOracleRequest(_requestId);
+geth --datadir node init genesis.json
 
-    assert(LinkToken.transfer(msg.sender, _payment));
-  }
-</code></pre>
+## start a full node
+geth --config ./config.toml --datadir ./node --pprofaddr 0.0.0.0 --metrics --pprof
+</code></pre><h3 id="rpc">RPC</h3>
+<pre><code>geth --rpc 
+</code></pre><p>默认端口 <strong>8545</strong></p>
+<p>测试</p>
+<pre><code>curl --location --request POST '127.0.0.1:8545' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	&quot;jsonrpc&quot;:&quot;2.0&quot;,
+	&quot;method&quot;:&quot;net_version&quot;,
+	&quot;params&quot;:[],
+	&quot;id&quot;:67
+}'
+</code></pre><p>返回成功</p>
+<pre><code>{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 67,
+    &quot;result&quot;: &quot;56&quot;
+}
+</code></pre><ul>
+<li>其它endpoints</li>
+</ul>
+<pre><code>https://bsc-dataseed.binance.org/
+https://bsc-dataseed1.defibit.io/
+https://bsc-dataseed1.ninicoin.io/
+</code></pre><p><a href="https://documenter.getpostman.com/view/4117254/ethereum-json-rpc/RVu7CT5J?version=latest">postman</a></p>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://docs.binance.org/smart-chain/developer/fullnode.html">bsc node</a></li>
+<li><a href="https://docs.binance.org/smart-chain/developer/rpc.html">bsc rpc</a></li>
+</ul>
         </div>
 
         

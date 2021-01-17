@@ -11,7 +11,6 @@ echo "Copy CNAME"
 cp CNAME ./docs/CNAME
 
 
-
 echo "$1"
 if [ ! -n "$1" ]
 then

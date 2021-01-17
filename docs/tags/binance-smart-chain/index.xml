@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Binance Smart Chain on LINK2.GURU</title>
+    <link>https://link2.guru/tags/binance-smart-chain/</link>
+    <description>Recent content in Binance Smart Chain on LINK2.GURU</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://link2.guru/tags/binance-smart-chain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BSC 币安智能链开发系列一</title>
+      <link>https://link2.guru/blog/bsc/bsc-%E5%B8%81%E5%AE%89%E6%99%BA%E8%83%BD%E9%93%BE%E5%BC%80%E5%8F%91%E7%B3%BB%E5%88%97%E4%B8%80/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://link2.guru/blog/bsc/bsc-%E5%B8%81%E5%AE%89%E6%99%BA%E8%83%BD%E9%93%BE%E5%BC%80%E5%8F%91%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
+      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
+&lt;p&gt;您可能听说过原生代币为币安币（BNB）的币安链（Binance Chain），它针对快速交易进行了优化。为了实现速度，它必须做出一定的权衡–一方面从可编程角度来说，它牺牲了其它区块链的灵活性。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

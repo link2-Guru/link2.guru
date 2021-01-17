@@ -23,10 +23,13 @@ type: "post"
 
 今天我们分析chainlink合约源码。
 
+---
+ <!--more--> 
 ### Oracle.sol
 
 Oracle 合约在收到转账之后，会触发 onTokenTransfer 方法，该方法会检查转账的有效性，并通过发出 OracleRequest 事件记录更为详细的数据信息
 位置[Oracle.sol](https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.6/Oracle.sol)
+
 
 
 

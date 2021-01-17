@@ -6,16 +6,25 @@
     <description>Recent content on LINK2.GURU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://link2.guru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://link2.guru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BSC 币安智能链开发系列一</title>
+      <link>https://link2.guru/blog/bsc/bsc-%E5%B8%81%E5%AE%89%E6%99%BA%E8%83%BD%E9%93%BE%E5%BC%80%E5%8F%91%E7%B3%BB%E5%88%97%E4%B8%80/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://link2.guru/blog/bsc/bsc-%E5%B8%81%E5%AE%89%E6%99%BA%E8%83%BD%E9%93%BE%E5%BC%80%E5%8F%91%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
+      <description>&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
+&lt;p&gt;您可能听说过原生代币为币安币（BNB）的币安链（Binance Chain），它针对快速交易进行了优化。为了实现速度，它必须做出一定的权衡–一方面从可编程角度来说，它牺牲了其它区块链的灵活性。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>chainlink合约源码分析（2）</title>
       <link>https://link2.guru/blog/chainlink%E5%90%88%E7%BA%A6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%902/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://link2.guru/blog/chainlink%E5%90%88%E7%BA%A6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%902/</guid>
-      <description>今天我们分析chainlink合约源码。
-Oracle.sol Oracle 合约在收到转账之后，会触发 onTokenTransfer 方法，该方法会检查转账的有效性，并通过发出 OracleRequest 事件记录更为详细的数据信息 位置Oracle.sol
-主要代码 /// LinkTokenReceiver.</description>
+      <description>&lt;p&gt;今天我们分析chainlink合约源码。&lt;/p&gt;
+&lt;hr&gt;</description>
     </item>
     
     <item>
@@ -24,9 +33,7 @@ Oracle.sol Oracle 合约在收到转账之后，会触发 onTokenTransfer 方法
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://link2.guru/blog/chainlink%E5%90%88%E7%BA%A6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%901/</guid>
-      <description>今天我们分析chainlink合约源码。
-ChainlinkClient.sol 位置ChainlinkClient.sol
-主要代码 /** * @notice 构建一个ChainlinkRequest * @param _specId node 节点创建的jobId * @param _callbackAddress 请求成功数据回调的地址 * @param _callbackFunctionSignature 回调地址对应的function * @return A Chainlink Request struct in memory */ function buildChainlinkRequest( bytes32 _specId, address _callbackAddress, bytes4 _callbackFunctionSignature ) internal pure returns (Chainlink.</description>
+      <description>&lt;p&gt;今天我们分析chainlink合约源码。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,8 +42,8 @@ ChainlinkClient.sol 位置ChainlinkClient.sol
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://link2.guru/blog/how-to-run-mainnet-on-near/</guid>
-      <description>注册钱包 首先你创建主网钱包地址，并激活。wallet.near.org
-部署主网节点（非验证节点）  clone nearcore  git clone https://github.com/near/nearcore.git 设置环境变量  export NEAR_RELEASE_VERSION=$(curl -s https://github.</description>
+      <description>&lt;h3 id=&#34;注册钱包&#34;&gt;注册钱包&lt;/h3&gt;
+&lt;p&gt;首先你创建主网钱包地址，并激活。&lt;a href=&#34;https://wallet.near.org/&#34;&gt;wallet.near.org&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

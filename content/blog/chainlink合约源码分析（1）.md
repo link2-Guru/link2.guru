@@ -24,6 +24,9 @@ type: "featured"
 
 今天我们分析chainlink合约源码。
 
+
+ <!--more--> 
+ 
 ### ChainlinkClient.sol
 位置[ChainlinkClient.sol](https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.6/ChainlinkClient.sol)
 
